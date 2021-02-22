@@ -1,0 +1,43 @@
+.video-slide {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15%;
+    position: relative;
+    &__card {
+        width: 50%;
+    }
+    &__card__img {
+        display: block;
+        width: 100%;
+    }
+    &__card__text {
+        width: 60%;
+        margin: 0 auto;
+    }
+    &__card__text__prgph {
+        margin-top: rem(55);
+        font-family: 'Poppins', sans-serif;
+        font-size: rem(14);
+        letter-spacing: 0.025em;
+        color: $grey;
+        line-height: rem(24);
+        font-weight: 300;
+        opacity: 0.65;
+    }
+    &__card__text__button {
+        margin: rem(40) 0 0;
+        @include button
+    }
+    &__card__text__button::after {
+        @include button_after
+    }
+    &__video {
+        width: 57%;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        height: 100%;
+        box-shadow: rem(-9) rem(1) rem(32) rem(-6) #727272;
+        ;
+    }
+}

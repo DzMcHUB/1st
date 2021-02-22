@@ -1,0 +1,33 @@
+.sidebar {
+    height: 65vh;
+    max-height: rem(610);
+    position: fixed;
+    width: rem(40);
+    top: rem(50);
+    right: 0;
+    text-align: center;
+    .sidebar_text {
+        width: rem(400);
+        height: rem(10);
+        right: rem(-182);
+        top: 10vh;
+        transform: rotate(-90deg);
+        font-family: "Spartan", sans-serif;
+        font-weight: 600;
+        font-size: rem(9);
+        letter-spacing: 0.6em;
+        color: $black;
+        opacity: 0.2;
+        position: absolute;
+    }
+    .icons {
+        position: absolute;
+        bottom: 0;
+        img {
+            color: $white;
+            height: rem(20);
+            display: inline-block;
+            margin: rem(10) auto;
+        }
+    }
+}

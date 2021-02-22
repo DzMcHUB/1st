@@ -1,0 +1,111 @@
+.boards {
+    &__header {
+        width: 100%;
+        text-align: center;
+        margin-bottom: rem(50);
+    }
+    &__header__top {
+        margin: 0 0 rem(5);
+        font-family: "Spartan", sans-serif;
+        color: $blue;
+        font-size: rem(9);
+        letter-spacing: 0.6em;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    &__header__bot {
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        font-size: rem(42);
+    }
+    &__select {
+        width: 100%;
+        display: flex;
+        margin-bottom: rem(80);
+    }
+    &__select__card {
+        width: calc(33.33% - 150px);
+        height: rem(450);
+        margin: 0 rem(90);
+        position: relative;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__select__card__grey {
+        position: absolute;
+        height: 75%;
+        width: 100%;
+        bottom: 0;
+        background-color: #ECECEC;
+    }
+    &__select__card__img {
+        right: -12%;
+        bottom: -10%;
+        position: absolute;
+        transition: all 0.8s 0.1s ease;
+    }
+    &__select__card__img:hover {
+        bottom: -6%;
+    }
+    &__select__card__disc {
+        position: absolute;
+        width: 75%;
+        height: 33.33%;
+        top: 45%;
+        left: 85%;
+    }
+    &__select__card__disc__top {
+        color: $lightGrey;
+        font-size: rem(12);
+        letter-spacing: 0.2em;
+        line-height: rem(14.4);
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: rem(5);
+    }
+    &__select__card__disc__mid {
+        font-family: 'Playfair Display', serif;
+        font-size: rem(26);
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        line-height: rem(28);
+        color: $darkgrey;
+    }
+    &__select__card__disc__bot {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    &__select__card__disc__bot__top {
+        position: absolute;
+        left: 30%;
+        top: 25%;
+        color: #CE60A8;
+        font-family: 'Poppins', sans-serif;
+        font-size: rem(20);
+        line-height: rem(24);
+        font-weight: 300;
+    }
+    &__select__card__disc__bot__bot {
+        position: absolute;
+        left: 30%;
+        top: 40%;
+        font-family: "Spartan", sans-serif;
+        font-size: rem(9);
+        font-weight: 600;
+        letter-spacing: 0.6em;
+        padding: rem(5) 0 0 rem(5);
+        color: $darkgrey;
+    }
+    &__footer {
+        text-align: center;
+        margin-bottom: rem(150);
+    }
+    &__footer__button {
+        @include button
+    }
+    &__footer__button::after {
+        @include button_after
+    }
+}

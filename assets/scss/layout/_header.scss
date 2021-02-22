@@ -1,0 +1,30 @@
+header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(40);
+    margin-bottom: rem(35);
+    nav {
+        width: 66.6%;
+        height: 100%;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        a {
+            height: 100%;
+            text-decoration: none;
+            font-family: "Spartan", sans-serif;
+            font-weight: 500;
+            font-size: rem(9);
+            letter-spacing: 0.62em;
+            color: $black;
+            line-height: rem(44);
+            margin-right: rem(24);
+            &:hover {
+                color: $blue;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.hero {
+    width: 100%;
+    article {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        padding-bottom: rem(90);
+        .wave {
+            width: 83.33%;
+            max-height: rem(530);
+            animation: fade 1.5s 1.4s linear 1 forwards;
+            opacity: 0;
+            img {
+                display: block;
+                max-height: rem(530);
+                width: 100%;
+                height: 100%;
+                box-shadow: rem(-15) rem(15) rem(69) rem(-30) rgba(0, 0, 0, 0.75);
+            }
+        }
+        .text {
+            position: absolute;
+            left: 0;
+            top: 25%;
+            width: 60%;
+            height: 40%;
+            z-index: 1;
+            h1 {
+                color: $black;
+                font-family: 'Playfair Display', serif;
+                font-size: rem(62);
+                font-weight: 700;
+                line-height: rem(64);
+                margin: 0;
+                overflow-x: visible;
+                animation-delay: 0.5s;
+            }
+            div {
+                color: $blue;
+                font-family: "Spartan", sans-serif;
+                font-size: 9px;
+                letter-spacing: 0.6em;
+                line-height: rem(66);
+                opacity: 0.9;
+                text-transform: uppercase;
+            }
+            p {
+                width: 52%;
+                color: $lightGrey;
+                font-family: 'Poppins', sans-serif;
+                font-size: rem(14);
+                font-weight: 300;
+                line-height: rem(24);
+                letter-spacing: 0.025em;
+                animation-delay: 1s;
+            }
+        }
+    }
+    .hero-quote {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: rem(50);
+        &__text {
+            color: $darkgrey;
+            font-family: 'Playfair Display', serif;
+            font-size: rem(26);
+            font-weight: 400;
+            line-height: rem(38);
+            letter-spacing: 0.01em;
+            opacity: 0.9;
+            animation-delay: 1.7s;
+        }
+        &__name {
+            color: $darkgrey;
+            font-family: "Spartan", sans-serif;
+            font-size: rem(9);
+            font-weight: 600;
+            letter-spacing: 0.6em;
+            opacity: 0.9;
+            animation-delay: 1.9s;
+        }
+    }
+    .hero-mid-line {
+        width: rem(3);
+        height: rem(100);
+        background-color: $blue;
+        margin: rem(50) auto;
+        padding-top: rem(50);
+        animation-delay: 1.9s;
+    }
+}
